@@ -1,0 +1,29 @@
+{
+  "name": "@adafruit/littlefs-pure-js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "version": "1.0.0",
+  "description": "LittleFS partially ported over to pure JavaScript",
+  "main": "littlefs.js",
+  "dependencies": {
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/adafruit/littlefs-pure-js.git"
+  },
+  "keywords": [
+    "BLE",
+    "WebBluetooth"
+  ],
+  "author": "Melissa LeBlanc-Williams",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adafruit/littlefs-pure-js/issues"
+  },
+  "homepage": "https://github.com/adafruit/littlefs-pure-js#readme"
+}
