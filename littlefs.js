@@ -2671,7 +2671,7 @@ compaction_block:  if (!doRelocate) {
 
         if (!(file.flags & LFS_F_INLINE)) {
             // copy over anything after current branch
-            let orig = new File({
+            let orig = new LfsFile({
                 ctz: file.ctz,
                 flags: LFS_O_RDONLY,
                 pos: file.pos,
@@ -3055,7 +3055,7 @@ compaction_block:  if (!doRelocate) {
   }
 }
 
-class Config {
+class LfsConfig {
   constructor({
     context = null,
     readSize = 64,
@@ -3312,7 +3312,7 @@ class FileConfig {
   }
 }
 
-class File {
+class LfsFile {
   constructor({
     id = 1,
     type = 0,
@@ -3339,4 +3339,4 @@ class File {
   }
 };
 
-export { LittleFS, Config };
+export { LittleFS, LfsConfig, LfsFile };
