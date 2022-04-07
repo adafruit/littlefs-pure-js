@@ -2232,6 +2232,8 @@ compaction_block:  if (!doRelocate) {
   }
 
   fileOpencfg(file, path, flags, cfg) {
+      let err;
+
   main_block: if (true) {
     // deorphan if we haven't yet, needed at most once after poweron
     if ((flags & LFS_O_WRONLY) == LFS_O_WRONLY) {
@@ -2241,7 +2243,6 @@ compaction_block:  if (!doRelocate) {
         }
     }
     // setup simple file details
-    let err;
     file.cfg = cfg;
     file.flags = flags;
     file.pos = 0;
@@ -3339,4 +3340,4 @@ class LfsFile {
   }
 };
 
-export { LittleFS, LfsConfig, LfsFile };
+export { LittleFS, LfsConfig, LfsFile, LFS_O_RDONLY, LFS_O_WRONLY, LFS_O_RDWR, LFS_O_CREAT, LFS_O_EXCL, LFS_O_TRUNC, LFS_O_APPEND };
