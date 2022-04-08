@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "LittleFS partially ported over to pure JavaScript",
   "main": "littlefs.js",
   "dependencies": {
